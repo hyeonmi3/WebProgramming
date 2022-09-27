@@ -1,13 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  const users = [
-    { id: 1, name: 'user1'},
-    { id: 2, name: 'usre2'}
-  ];
-  res.json(users);
+  res.render('info', { title: 'Express' }, { message: '아무거남'});
 });
 
 module.exports = router;
