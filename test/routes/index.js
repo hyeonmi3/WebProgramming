@@ -1,9 +1,12 @@
 var express = require('express');
-var router = express.Router();
+const tododb = require('../models/mariadb/todo');
+
+const router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.get('/', async(req, res) => {
+  const rows = await tododb.selectTodos();
+  res.render('index', { todos:rows });
 });
 
 module.exports = router;
