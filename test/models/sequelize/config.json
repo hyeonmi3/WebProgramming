@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "application",
+        "password": "application",
+        "database": "test",
+        "host": "127.0.0.1",
+        "dialect": "mariadb"
+    },
+    "test": {
+        "username": "applocation",
+        "password": "applocation",
+        "database": "test",
+        "host": "127.0.0.1",
+        "dialect": "mariadb"
+    },
+    "production": {
+        "username": "applocation",
+        "password": "applocation",
+        "database": "test",
+        "host": "127.0.0.1",
+        "dialect": "mariadb"
+    }
+}
